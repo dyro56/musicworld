@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "mavenpro";
+    src: url("../fonts/MavenPro-VariableFont_wght.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "mavenpro", monospace;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+.navbar {
+  display: flex;
+  background-color: rgba(231, 67, 67, 0.993);
+  padding: 2rem 4 rem;
+  justify-content: end;
+}
+.navbar-brand {
+  display: flex;
+  color: black;
+  font-weight: bold;
+}
+.navbar-nav .nav-link.active {
+  display: flex;
+  color: black;
+  font-weight: bold;
+}
+.nav-link {
+  display: flex;
+  color: black;
+  font-weight: bold;
+}
+.nav-link.dropdown-toggle {
+  display: flex;
+  color: black;
+  font-weight: bold;
+}
+.nav-item {
+  display: flex;
+  color: black;
+  font-weight: bold;
+}
+.hero {
+  padding: 8rem;
+  display: flex;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+  padding-top: 4rem;
+  justify-content: center;
+  background-image: url(../img/1920x1080_px_Guitar_music-823834.jpg!d);
+  background-size: cover;
+  background-position: center;
+}
+.hero__titulo {
+  background-color: rgba(0, 0, 0, 0.89);
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+}
+
+.grid__columns {
+  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "column1 column2 column3";
+  text-align: center;
+}
+.column1 {
+  background-color: pink;
+  grid-area: column1;
+  padding: 2rem;
+}
+.column2 {
+  background-color: aquamarine;
+  grid-area: column2;
+  padding: 2rem;
+}
+.column3 {
+  background-color: grey;
+  grid-area: column3;
+  padding: 2rem;
+}
+@media (max-width: 600px) {
+  .grid__columns {
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "column1"
+      "column2"
+      "column3";
+    text-align: center;
+  }
+}
+footer {
+  background-color: #2d3246;
+}
+.container {
+  display: flex;
+  color: white;
+  padding: 2rem 1rem;
+  width: 100%;
+}
+.grid__columns__servicios {
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "column1";
+    text-align: center;
+}
+.subtitle {
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+}
+.grid__columns__contactos {
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "column1";
+    text-align: center;
+}
+.grid__columns__recomendaciones {
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "column1";
+    text-align: center;
+}
+
+.grid__columns__faq {
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "column1 column2 column3";
+    text-align: center;
+}
+.btn .btn-outline-success {
+    color: black;
+    border-color: black;
+}
